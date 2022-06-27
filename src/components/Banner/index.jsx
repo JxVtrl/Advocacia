@@ -8,7 +8,7 @@ export function Banner() {
     return (
       <Container>
         <h1>
-          Bem vindo ao <strong>Github Finder</strong>
+        Izabella Rennó Advocacia
         </h1>
         <Button
           text="Saiba mais"
