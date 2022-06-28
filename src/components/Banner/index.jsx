@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Carrosel } from "../../components";
+import { Button } from "../../components";
 import { Container } from './styles';
 
 export function Banner() {
@@ -7,7 +7,6 @@ export function Banner() {
 
     return (
       <Container>
-        <Carrosel />
         <h1>
         Izabella Rennó Advocacia
         </h1>

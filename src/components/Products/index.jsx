@@ -1,28 +1,34 @@
 import React, { useState } from "react";
-import { Button } from '../../components'
+import { Button } from '..'
 import { Currency, Timestamp } from '../../helpers'
 import { Container, CardContainer } from './styles';
 
-export function Cards() {
+export function Products() {
   return (
     <Container>
-      <Card
+      <Product
         img="https://img.migalhas.com.br/gf_base/empresas/MIGA/imagens/D5A194229EE4850434ADE9F89C58CF293EBD_advogado.jpg"
         text="Sessão de Introdução"
-        valor={500}
+        valor={1500}
         time={60}
       />
-      <Card
+      <Product
         img="https://wp.ebradi.com.br/wp-content/uploads/2021/08/ebradi_ebradi_image_490-1080x675.jpeg"
         text="Consultoria rápida"
-        valor={1000}
+        valor={2000}
         time={120}
+      />
+      <Product
+        img="https://wp.ebradi.com.br/wp-content/uploads/2021/08/ebradi_ebradi_image_490-1080x675.jpeg"
+        text="Consultoria longa"
+        valor={4000}
+        time={180}
       />
     </Container>
   );
 }
 
-export function Card({ img, text, valor, time }) {
+export function Product({ img, text, valor, time }) {
   const [isHover, setIsHover] = useState(false);
 
   return (

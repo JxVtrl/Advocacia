@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 20px 10px;
+  margin: 20px auto;
   display: flex;
-  gap: 10px;
+  justify-content: space-around;
+  width: 60%; 
 `;
 
 
@@ -22,12 +23,14 @@ export const CardContainer = styled.div`
     width: 100%;
     height: 50%;
   }
+
   hr {
     margin: 10px auto;
     width: 80%;
     height: 2px;
     background-color: #000;
   }
+  
   p {
     margin-top: 5px;
     font-size: 20px;
