@@ -7,7 +7,7 @@ export function Main() {
 
   return (
     <Container>
-      <Carrosel />
+      {/* <Carrosel /> */}
       <Cards />
       <Button
           styles={{
