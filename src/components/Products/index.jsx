@@ -24,7 +24,6 @@ export function Products() {
       speed={800}
       style={{
         maxWidth: isMobile ? '100%' : '1200px',
-        
       }}
     >
       <SwiperSlide>

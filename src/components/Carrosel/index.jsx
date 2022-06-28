@@ -14,8 +14,6 @@ export function Carrosel() {
         modules={[ Pagination, Autoplay]}
         spaceBetween={10}
         slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         pagination={{ clickable: true, dynamicBullets: true }}
         loop={true}
         autoplay={{
