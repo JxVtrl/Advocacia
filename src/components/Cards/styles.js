@@ -1,15 +1,19 @@
 import styled from 'styled-components';
 
-export const ProductContainer = styled.div`
+export const Container = styled.div`
+  margin: 20px auto;
+  display: flex;
+  width: 60%; 
+
+`
+
+export const CardContainer = styled.div`
   width: 300px;
   height: 450px;
   border-radius: 10px;
   border: 1px solid #000;
   overflow: hidden;
-  margin: 0 8px;
   box-shadow: 3px 3px 7px #CCC;
-  align-self: center;
-  margin: 10px auto;
 
   img {
     object-fit: cover;

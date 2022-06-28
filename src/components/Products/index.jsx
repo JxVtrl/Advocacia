@@ -1,30 +1,57 @@
 import React, { useState } from "react";
-import { Button } from '..'
+import { Button } from '../../components'
 import { Currency, Timestamp } from '../../helpers'
-import { Container, CardContainer } from './styles';
+import { useDevice } from "../../hooks";
+import { ProductContainer } from './styles';
+
+import { Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import 'swiper/css/pagination';
 
 export function Products() {
+  const { device: { isMobile } } = useDevice();
+
   return (
-    <Container>
-      <Product
-        img="https://img.migalhas.com.br/gf_base/empresas/MIGA/imagens/D5A194229EE4850434ADE9F89C58CF293EBD_advogado.jpg"
-        text="Sessão de Introdução"
-        valor={1500}
-        time={60}
-      />
-      <Product
-        img="https://wp.ebradi.com.br/wp-content/uploads/2021/08/ebradi_ebradi_image_490-1080x675.jpeg"
-        text="Consultoria rápida"
-        valor={2000}
-        time={120}
-      />
-      <Product
+    <Swiper
+      modules={[ Autoplay ]}
+      slidesPerView={isMobile ? 1 : 3}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: true,
+      }}
+      speed={800}
+      style={{
+        maxWidth: isMobile ? '100%' : '1200px',
+        
+      }}
+    >
+      <SwiperSlide>
+        <Product
+          img="https://img.migalhas.com.br/gf_base/empresas/MIGA/imagens/D5A194229EE4850434ADE9F89C58CF293EBD_advogado.jpg"
+          text="Sessão de Introdução"
+          valor={1500}
+          time={60}
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Product
+          img="https://wp.ebradi.com.br/wp-content/uploads/2021/08/ebradi_ebradi_image_490-1080x675.jpeg"
+          text="Consultoria rápida"
+          valor={2000}
+          time={120}
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Product
         img="https://wp.ebradi.com.br/wp-content/uploads/2021/08/ebradi_ebradi_image_490-1080x675.jpeg"
         text="Consultoria longa"
         valor={4000}
         time={180}
-      />
-    </Container>
+        />
+      </SwiperSlide>
+    </Swiper>
   );
 }
 
@@ -32,7 +59,7 @@ export function Product({ img, text, valor, time }) {
   const [isHover, setIsHover] = useState(false);
 
   return (
-    <CardContainer>
+    <ProductContainer>
       <img src={img} alt="#" />
       <p>{text}</p>
       <hr />
@@ -60,6 +87,6 @@ export function Product({ img, text, valor, time }) {
         }}
         text="Agendar agora"
       />
-    </CardContainer>
+    </ProductContainer>
   );
 }
