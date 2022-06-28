@@ -5,4 +5,3 @@ export { Nav } from './Nav';
 export { Carrosel } from './Carrosel';
 export { Products } from './Products';
 export { Services } from './Services';
-export { Contact } from './Contact';

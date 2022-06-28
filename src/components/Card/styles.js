@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 400px;
+    width: 600px;
     height: 400px;
-    background-color: #0f0;
+    background-color: #fff;
+
+    div{
+        display: grid
+    }
 `;
