@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import './styles.css'
+import React, { useState } from 'react'
+import { Map } from '../components'
 import { Header, Main, Footer } from '../sections'
+import { Container } from './styles'
 
 function App() {
-
   return (
-    <div className="App">
+    <Container>
+      <Map/>
       <Header />
       <Main />
       <Footer />
-    </div>
+    </Container>
   )
 }
 

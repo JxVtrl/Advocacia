@@ -1,20 +1,26 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-image: url("https://img.freepik.com/fotos-gratis/escalas-de-justica-em-livros-de-direito-em-um-tribunal-ou-escritorio-de-advocacia-conceito-de-direito-educacao-juridica_488220-25449.jpg?w=2000");
-  width: 100%;
-  height: 650px;
+  background-image: url("https://ferreirasalles.com.br/images/banner.jpg");
   background-size: cover;
   background-position: 0 -200px;
-  image-resolution: from-image;
   background-repeat: no-repeat;
+  image-resolution: from-image;
+
+  width: 100%;
+  height: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 10px;
+
+  @media (max-width: 1255px) {
+    background-position: center;
+
+  }
 
   h1 {
-    color: #888;
+    color: #fff;
   }
 `;

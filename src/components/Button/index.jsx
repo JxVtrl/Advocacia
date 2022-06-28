@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Button({ text, styles, setIsHover }) {
+export function Button({ text, styles, setIsHover=false }) {
   const handleMouseEnter = () => setIsHover(true);
   const handleMouseLeave = () => setIsHover(false);
   

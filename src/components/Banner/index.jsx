@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from '../../components';
+import { Button, Carrosel } from "../../components";
 import { Container } from './styles';
 
 export function Banner() {
@@ -7,6 +7,7 @@ export function Banner() {
 
     return (
       <Container>
+        <Carrosel />
         <h1>
         Izabella Rennó Advocacia
         </h1>
@@ -14,14 +15,15 @@ export function Banner() {
           text="Saiba mais"
           setIsHover={setIsHover}
           styles={{
-            backgroundColor: isHover ? "#999" : "#666",
+            backgroundColor: isHover ? "#cf1919" : "#b61c1c",
             borderRadius: "10px",
             color: "#fff",
             padding: "8px",
             marginTop: "10px",
             cursor: "pointer",
             fontSize: "14px",
-            transition: "all 0.8s linear",
+            transition: "all 0.3s linear",
+            fontWeight: '600'
           }}
         />
       </Container>

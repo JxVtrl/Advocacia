@@ -10,8 +10,6 @@ export function Header() {
         <a href='#'>Izabella Rennó Advocacia</a>
       </h1>
       <Nav/>
-      
-      
     </Head>
   );
 }
