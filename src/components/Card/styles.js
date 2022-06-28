@@ -6,6 +6,6 @@ export const Container = styled.div`
     background-color: #fff;
 
     div{
-        display: grid
+        display: grid;
     }
 `;
