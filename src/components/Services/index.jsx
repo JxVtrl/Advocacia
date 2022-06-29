@@ -9,8 +9,7 @@ export function Services() {
     const [isHover, setIsHover] = useState(false);
     return (
         <Container>
-            <h1>Serviços Jurídicos</h1>
-            <p>Expertise, Intuição, Engenhosidade.</p>
+            <h2>Expertise, Intuição, Engenhosidade.</h2>
             <Cards />
             
             <div>
@@ -25,14 +24,14 @@ export function Services() {
                         alignItems: 'center',
                         width: '120px',
                         height: '30px',
-                        opacity: isHover ? '0.5' : '1',
                         borderRadius: '20px',
                         padding: '10px',
                         marginTop: '20px',
                         boxShadow: '3px 3px 6px #000',
                         cursor: 'pointer',
                         transition: 'all 0.3s linear',
-                        color: '#fff'
+                        color: '#fff',
+                        backgroundColor: '#000'
                     }
                 }/>
             </div>

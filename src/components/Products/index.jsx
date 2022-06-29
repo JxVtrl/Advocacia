@@ -24,6 +24,7 @@ export function Products() {
       speed={800}
       style={{
         maxWidth: isMobile ? '100%' : '1200px',
+        margin: '40px auto'
       }}
     >
       <SwiperSlide>
@@ -44,7 +45,7 @@ export function Products() {
       </SwiperSlide>
       <SwiperSlide>
         <Product
-        img="https://wp.ebradi.com.br/wp-content/uploads/2021/08/ebradi_ebradi_image_490-1080x675.jpeg"
+        img="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
         text="Consultoria longa"
         valor={4000}
         time={180}

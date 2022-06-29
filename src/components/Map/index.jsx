@@ -31,18 +31,19 @@ export function Map() {
       isLoaded ? (
         <GoogleMap
             mapContainerStyle={{
-                width: "100%",
-                height: "400px",
+              width: "100%",
+              height: "400px",
             }}
             center={center}
             zoom={12}
             options={{
-                disableDefaultUI: true,
-                zoomControl: true,
-                mapTypeControl: true,
-                maxZoom: 18,
-                minZoom: 10,
-                clickableIcons: false,
+              disableDefaultUI: true,
+              zoomControl: true,
+              mapTypeControl: true,
+              maxZoom: 18,
+              minZoom: 10,
+              clickableIcons: false,
+              mapTypeId: 'satellite',
             }}
             onLoad={onMapLoad}
             onUnmount={onUnmount}
