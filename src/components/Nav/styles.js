@@ -21,6 +21,7 @@ export const NavMenu = styled.nav`
     gap: ${props => props.isMobile ? '0' : '10px'};
     background-color: #fff;
     border-radius: 5px;
+    overflow: hidden;
   }
 
   li {
