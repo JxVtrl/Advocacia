@@ -2,19 +2,34 @@ import React, { useState } from 'react';
 import { Button } from "../../components";
 import { Container } from './styles';
 
-export function Banner({img}) {
-    const [isHover, setIsHover] = useState(false);
+export function Banner({img, num, text, btnTxt, name}) {
+  const [isHover, setIsHover] = useState(false);
+  
+  function setColor(num, isHover) {
+    switch (num) {
+      case 1:
+        return isHover ? '#bd1515' : '#b61c1c';
+      case 2:
+        return isHover ? '#555' : '#333';
+      case 3:
+        return isHover ? '#555' : '#333';
+      default:
+        return '#000';
+    }
+
+  }
 
     return (
-      <Container img={img}>
+      <Container img={img} num={num}>
         <h1>
-        Izabella Rennó Advocacia
+          {text}
         </h1>
+        <address>{name}</address>
         <Button
-          text="Saiba mais"
+          text={btnTxt}
           setIsHover={setIsHover}
           styles={{
-            backgroundColor: isHover ? "#cf1919" : "#b61c1c",
+            backgroundColor: setColor(num, isHover),
             borderRadius: "10px",
             color: "#fff",
             padding: "8px",
@@ -22,8 +37,9 @@ export function Banner({img}) {
             cursor: "pointer",
             fontSize: "14px",
             transition: "all 0.3s linear",
-            fontWeight: '600'
-          }}
+            fontWeight: '600',
+            opacity: isHover? '0.6' : '1',
+        }}
         />
       </Container>
     );

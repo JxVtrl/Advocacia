@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 80%;
   height: 100%;
-  
   margin: 20px auto;
   
   display: grid;
@@ -14,22 +13,24 @@ export const Container = styled.div`
   
   div {
     margin: 0 auto;
+    padding: 0 50px;
     background-color: white;
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
-    
-    p{
-      color: #000 !important;
-      text-align: center;
-      font-size: 20px !important;
-      text-align: justify;
-      padding: 5px;
-    }
 
     h1{
       color: #000;
+    }
+    
+    p{
+      color: #000 !important;
+      width: 100%;
+      max-width: 1000px;
+      font-size: 22px !important;
+      text-align: justify;
+      padding: 5px;
     }
 
     /* &:nth-child(1) {

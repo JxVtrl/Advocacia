@@ -22,6 +22,10 @@ export const Container = styled.div`
   }
 
   h1 {
-    color: #fff;
+    color: ${props => props.num === 3 ? '#000' : '#fff'};
+  }
+
+  address{
+    color: ${props => props.num === 3 ? '#000' : '#fff'};
   }
 `;

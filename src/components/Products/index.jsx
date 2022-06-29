@@ -78,7 +78,7 @@ export function Product({ img, text, valor, time }) {
           flexShrink: 0,
           padding: "12px 4px",
           boxShadow: "2px 2px 5px #000",
-          backgroundColor: isHover ? "#333" : "#555",
+          backgroundColor: isHover ? "#555" : "#333",
           transition: 'all 0.3s ease-in-out',
           cursor: "pointer",
           color: "#fff",
