@@ -26,6 +26,7 @@ export function Services(){
                     borderRadius: '20px',
                     padding: '10px',
                     marginTop: '20px',
+                    boxShadow: '3px 3px 6px #000',
                 }
             }/>
     </div>

@@ -1,9 +1,10 @@
 import React, { useState, useCallback } from "react";
 import {
-    GoogleMap, 
-    useJsApiLoader,
-
+  GoogleMap, 
+  useJsApiLoader,
 } from "@react-google-maps/api";
+
+import { Load } from "../Load";
 
 const center = {
   lat: -22.98225,
@@ -27,7 +28,7 @@ export function Map() {
     }, []);
 
     return (
-      isLoaded && (
+      isLoaded ? (
         <GoogleMap
             mapContainerStyle={{
                 width: "100%",
@@ -46,6 +47,6 @@ export function Map() {
             onLoad={onMapLoad}
             onUnmount={onUnmount}
         />
-      )
+      ) : <Load />
     );
 }

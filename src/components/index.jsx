@@ -7,3 +7,4 @@ export { Products } from './Products';
 export { Services } from './Services';
 export { Cards } from './Cards';
 export { Burger } from './Burger';
+export { Load } from './Load';
