@@ -42,7 +42,7 @@ export function Carrosel() {
             btnTxt='Saiba mais'
           />
         </SwiperSlide>
-        
+
         <SwiperSlide>
           <Banner
             name='Lao-Tsé'

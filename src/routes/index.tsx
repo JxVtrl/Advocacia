@@ -7,14 +7,16 @@ import {
   Navigate,
 } from 'react-router-dom'
 import { Load } from '../components'
-import { Home } from '../pages'
+import { Home, About, Schedule } from '../pages'
 
 
 export const routesObject = {
   home: 'home',
+  sobre: 'sobre',
+  agende: 'agende',
 }
 
-const { home } = routesObject
+const { home, sobre, agende } = routesObject
 
 const RoutesDeclaration: React.FC = () => {
   const location = useLocation()
@@ -25,6 +27,14 @@ const RoutesDeclaration: React.FC = () => {
         <Route
           path={home}
           element={<Home />}
+        />
+        <Route
+          path={sobre}
+          element={<About />}
+        />
+        <Route
+          path={agende}
+          element={<Schedule />}
         />
         <Route
           path="*"
