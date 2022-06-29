@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProductContainer = styled.div`
   width: 300px;
-  height: 450px;
+  height: 400px;
   border-radius: 10px;
   border: 1px solid #000;
   overflow: hidden;
@@ -10,6 +10,15 @@ export const ProductContainer = styled.div`
   box-shadow: 3px 3px 7px #CCC;
   align-self: center;
   margin: 10px auto;
+  padding-bottom: 30px;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-between;
+
+  div {
+    height: 320px;
+  }
 
   img {
     object-fit: cover;
@@ -24,24 +33,25 @@ export const ProductContainer = styled.div`
     height: 2px;
     background-color: #000;
   }
-  
+
   p {
-    margin-top: 5px;
+    font-size: 18px;
+    text-align: left;
+    margin: 20px 20px;
+  }
+  
+  p:first-of-type {
+    font-family: 'Archivo Black';
+    text-align: center;
+    margin: 10px 0 0;
     font-size: 20px;
-    font-weight: 400;
   }
 
   p:nth-child(4){
-    font-size: 14px;
     font-weight: 500;
-    text-align: left;
-    margin: 20px 20px;
   }
 
-  p:nth-child(5){
-    font-size: 16px;
-    text-align: left;
+  p:nth-child(5){   
     font-weight: 600;
-    margin: 20px 20px;
   }
 `;

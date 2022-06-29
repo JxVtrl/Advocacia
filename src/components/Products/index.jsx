@@ -59,11 +59,13 @@ export function Product({ img, text, valor, time }) {
 
   return (
     <ProductContainer>
-      <img src={img} alt="#" />
-      <p>{text}</p>
-      <hr />
-      <p>{Timestamp(time)}</p>
-      <p>{Currency(valor)}</p>
+      <div>
+        <img src={img} alt="#" />
+        <p>{text}</p>
+        <hr />
+        <p>{Timestamp(time)}</p>
+        <p>{Currency(valor)}</p>
+      </div>
       <Button
         setIsHover={setIsHover}
         styles={{
@@ -73,6 +75,7 @@ export function Product({ img, text, valor, time }) {
           alignItems: "center",
           width: "120px",
           height: "35px",
+          flexShrink: 0,
           padding: "12px 4px",
           boxShadow: "2px 2px 5px #000",
           backgroundColor: isHover ? "#333" : "#555",
@@ -82,7 +85,8 @@ export function Product({ img, text, valor, time }) {
           overflow: "hidden",
           fontWeight: "bold",
           borderRadius: "20px",
-          fontSize: "13px",
+          fontSize: "14px",
+          fontFamily: "Achivo Black",
         }}
         text="Agendar agora"
       />

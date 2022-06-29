@@ -21,8 +21,14 @@ export const Container = styled.div`
     background-size: cover;
     
     p{
-      color: #000;
+      color: #000 !important;
       text-align: center;
+      font-size: 18px !important;
+      text-align: justify;
+    }
+
+    h1{
+      color: #000;
     }
 
     &:nth-child(1) {

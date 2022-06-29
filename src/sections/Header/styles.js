@@ -11,6 +11,7 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     font-size: 20px;
+    font-family: 'Archivo Black';
     a {
       text-decoration: none;
       color: #000;

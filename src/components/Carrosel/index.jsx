@@ -17,14 +17,21 @@ export function Carrosel() {
         pagination={{ clickable: true, dynamicBullets: true }}
         loop={true}
         autoplay={{
-          delay: 3500,
+          delay: 3000,
           disableOnInteraction: true,
         }}
         speed={800}
         
       >
-        <SwiperSlide><Banner/></SwiperSlide>
-        <SwiperSlide><Banner/></SwiperSlide>
+        <SwiperSlide>
+          <Banner img='https://ferreirasalles.com.br/images/banner.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Banner img='https://goianiaadvogado.com.br/wp-content/uploads/2019/03/banner-advogado-goiania.jpg'/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Banner img='https://drsp.adv.br/wp-content/uploads/2021/01/banner-header-12.png'/>
+          </SwiperSlide>
       </Swiper>
     );
 }

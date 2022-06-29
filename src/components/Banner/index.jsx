@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Button } from "../../components";
 import { Container } from './styles';
 
-export function Banner() {
+export function Banner({img}) {
     const [isHover, setIsHover] = useState(false);
 
     return (
-      <Container>
+      <Container img={img}>
         <h1>
         Izabella Rennó Advocacia
         </h1>
