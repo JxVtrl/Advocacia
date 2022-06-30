@@ -38,5 +38,22 @@ export const Container = styled.div`
       color: #000;
       font-size: 30px;
    }
+
+   .depositions{
+      display: flex;
+      width: 1000px;
+      margin-top: 120px;
+   }
+
+   .depositions h2{
+      border-bottom: 1px solid #000;
+   }
+
+   .depositions p{
+      font-family: 'Judson';
+      font-size: 25px;
+      margin: 15px;
+   }
+
    `;
 
